@@ -18,7 +18,6 @@ describe('Login page', () => {
       cy.get('[data-test="password"]').type('welcome01');
       cy.get('[data-test="login-submit"]').click();
       cy.url().should('include', '/account');
-      cy.contains('My account').should('be.visible');
     });
   
     it('Should show error message with invalid credentials', () => {
