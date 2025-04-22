@@ -3,19 +3,21 @@
     "cypress": "^14.3.0"
   },
   "name": "cypress-tests",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "cypress.config.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx cypress run",
+    "test": "npx cypress run",
+    "open": "npx cypress open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/khaidpham/cypress-tests.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["cypress", "e2e", "automation"],
+  "author": "Khai Pham",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
