@@ -3,7 +3,7 @@
     "cypress": "^14.3.0"
   },
   "name": "cypress-tests",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "cypress.config.js",
   "devDependencies": {},
@@ -16,7 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/khaidpham/cypress-tests.git"
   },
-  "keywords": ["cypress", "e2e", "automation"],
+  "keywords": [
+    "cypress",
+    "e2e",
+    "automation"
+  ],
   "author": "Khai Pham",
   "license": "ISC",
   "type": "commonjs",
