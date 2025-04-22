@@ -1,10 +1,11 @@
-const { defineConfig } = require("cypress");
+// cypress.config.js
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
-  projectId: '4jrak6',
+  projectId: 'cwvpba',
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    experimentalStudio: true,
+    chromeWebSecurity: false,
+    // baseUrl: 'https://www.paylocity.com',
   },
 });
