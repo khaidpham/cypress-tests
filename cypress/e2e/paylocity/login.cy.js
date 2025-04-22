@@ -1,10 +1,4 @@
 // cypress/e2e/paylocity/login.cy.js
-
-Cypress.on('uncaught:exception', (err, runnable) => {
-    if (err.message.includes("top.$ is not a function")) {
-      return false; // Ignore this specific error
-    }
-  });
   
   describe('Paylocity login page', () => {
     beforeEach(() => {
@@ -25,6 +19,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     
     it('should show an error message when login with empty fields', () => {
       cy.get('.login-button').click();
-      cy.get('.banner-message.error').debug().should('be.visible').and('contain.text', 'The credentials provided are incorrect');
+      cy.get('.banner-message.error').should('be.visible').invoke('text').then((text) => {
+        cy.log(`Banner message: ${text}`);
+      });
+
+      // Validate the error message
+      cy.get('.banner-message.error').should('contain.text', 'The credentials provided are incorrect');
     });
 });
