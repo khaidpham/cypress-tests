@@ -3,7 +3,7 @@
     "cypress": "^14.3.0"
   },
   "name": "cypress-tests",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "cypress.config.js",
   "devDependencies": {},
