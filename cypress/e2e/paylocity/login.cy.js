@@ -1,7 +1,8 @@
 // cypress/e2e/paylocity/login.cy.js
-import { LoginPage } from '../pages/LoginPage';
+import { LoginPage } from '../../pages/LoginPage';
 
 const loginPage = new LoginPage();
+
 describe('Paylocity login page ', () => {
   beforeEach(() => {
     cy.visit('https://access.paylocity.com');
